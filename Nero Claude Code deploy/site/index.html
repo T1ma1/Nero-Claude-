@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="NERO — студия декоративных покрытий и красок. Широкий выбор декоративных покрытий, собственный бренд NERO, официальные представители турецкого бренда YALAZ в России.">
+    <meta name="keywords" content="NERO, декоративные покрытия, краски, YALAZ, Махачкала, студия красок, декоративные краски">
+    <meta name="author" content="NERO Decor Studio">
+    <title>NERO — Студия декоративных покрытий и красок</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Montserrat:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preloader-inner">
+            <div class="paint-drop"></div>
+            <div class="preloader-text">NERO</div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <img src="assets/images/logo/nero-logo.jpg" alt="NERO Logo" class="logo-img">
+            </a>
+            <ul class="nav-menu">
+                <li><a href="#about" class="nav-link">О нас</a></li>
+                <li><a href="#catalog" class="nav-link">Каталог</a></li>
+                <li><a href="#why-us" class="nav-link">Почему мы</a></li>
+                <li><a href="#contacts" class="nav-link">Контакты</a></li>
+            </ul>
+            <div class="nav-phone">
+                <a href="tel:+79894577111">+7 (989) 457-71-11</a>
+            </div>
+            <button class="burger" id="burger" aria-label="Меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <ul class="mobile-nav">
+            <li><a href="#about" class="mobile-link">О нас</a></li>
+            <li><a href="#catalog" class="mobile-link">Каталог</a></li>
+            <li><a href="#why-us" class="mobile-link">Почему мы</a></li>
+            <li><a href="#contacts" class="mobile-link">Контакты</a></li>
+        </ul>
+        <div class="mobile-phone">
+            <a href="tel:+79894577111">+7 (989) 457-71-11</a>
+        </div>
+    </div>
+
+    <!-- Block 1: Hero -->
+    <section id="hero" class="hero">
+        <div class="hero-bg">
+            <div class="hero-parallax"></div>
+            <div class="hero-overlay"></div>
+        </div>
+        <!-- Paint Splashes Canvas -->
+        <canvas id="paint-canvas" class="paint-canvas"></canvas>
+        <div class="hero-content">
+            <div class="hero-logo-badge">
+                <img src="assets/images/logo/nero-logo.jpg" alt="NERO" class="hero-logo-icon">
+            </div>
+            <h1 class="hero-title">
+                <span class="hero-title-line">Студия декоративных</span>
+                <span class="hero-title-line">покрытий и красок</span>
+            </h1>
+            <p class="hero-subtitle">Где рождается красота и уют</p>
+            <div class="hero-divider">
+                <span class="divider-line"></span>
+                <span class="divider-diamond"></span>
+                <span class="divider-line"></span>
+            </div>
+            <div class="hero-buttons">
+                <a href="#catalog" class="btn btn-primary">Смотреть каталог</a>
+                <a href="#contacts" class="btn btn-outline">Связаться с нами</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+            <span>Листайте вниз</span>
+        </div>
+    </section>
+
+    <!-- Galaxy Background -->
+    <canvas id="galaxy-canvas" class="galaxy-canvas"></canvas>
+
+    <!-- Block 2: About -->
+    <section id="about" class="about section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">О компании</span>
+                <h2 class="section-title">NERO — где рождается<br>красота и уют</h2>
+                <div class="title-underline">
+                    <span class="brush-stroke"></span>
+                </div>
+            </div>
+            <div class="about-grid">
+                <div class="about-col reveal reveal-left">
+                    <div class="about-card">
+                        <div class="about-card-accent"></div>
+                        <h3>История и миссия</h3>
+                        <p>NERO — это студия декоративных покрытий и красок, где рождается красота и уют. Мы создаём пространства, которые вдохновляют и дарят комфорт. Наша миссия — предоставить каждому клиенту доступ к лучшим материалам мирового уровня, сочетая качество, эстетику и индивидуальный подход.</p>
+                        <p>Мы гордимся тем, что являемся первыми в России официальными представителями турецкого бренда YALAZ — компании с более чем 30-летней историей производства красок и покрытий высочайшего качества.</p>
+                    </div>
+                </div>
+                <div class="about-col reveal reveal-right">
+                    <div class="about-card">
+                        <div class="about-card-accent"></div>
+                        <h3>Собственный бренд NERO</h3>
+                        <p>Качество, проверенное временем. Наш собственный бренд красок NERO — это результат многолетнего опыта и глубокого понимания потребностей рынка. Каждый продукт проходит строгий контроль качества, чтобы вы получили идеальный результат.</p>
+                        <p>Мы сотрудничаем с крупными и надёжными брендами, предлагая нашим клиентам только проверенные решения для любых задач — от интерьерных покрытий до промышленных красок.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="about-facts">
+                <div class="fact-card reveal">
+                    <div class="fact-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"/>
+                        </svg>
+                    </div>
+                    <h4>Широкий выбор</h4>
+                    <p>Декоративных покрытий и красок для любых задач</p>
+                </div>
+                <div class="fact-card reveal">
+                    <div class="fact-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                        </svg>
+                    </div>
+                    <h4>Бренд NERO</h4>
+                    <p>Качество, проверенное временем</p>
+                </div>
+                <div class="fact-card reveal">
+                    <div class="fact-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/>
+                        </svg>
+                    </div>
+                    <h4>Надёжные партнёры</h4>
+                    <p>Сотрудничество с крупными мировыми брендами</p>
+                </div>
+                <div class="fact-card reveal">
+                    <div class="fact-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M3 21v-4m0 0V5a2 2 0 012-2h6.5l1 1H21l-3 6 3 6h-8.5l-1-1H5a2 2 0 00-2 2zm9-13.5V9"/>
+                        </svg>
+                    </div>
+                    <h4>Первые в России</h4>
+                    <p>Официальные представители турецкого бренда YALAZ</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Block 3: Catalog -->
+    <section id="catalog" class="catalog section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Продукция</span>
+                <h2 class="section-title">Каталог продукции</h2>
+                <div class="title-underline">
+                    <span class="brush-stroke"></span>
+                </div>
+                <p class="section-desc">Полный ассортимент красок и покрытий бренда YALAZ — от строительных до специальных</p>
+            </div>
+            <div class="catalog-grid">
+                <!-- 1. Construction Group -->
+                <a href="catalog/construction.html" class="catalog-card reveal">
+                    <div class="catalog-card-bg" style="background: linear-gradient(135deg, #2c1810 0%, #1a1a2e 100%);">
+                        <div class="catalog-card-icon">
+                            <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="8" y="28" width="48" height="28" rx="2"/>
+                                <path d="M16 28V16a2 2 0 012-2h28a2 2 0 012 2v12"/>
+                                <path d="M24 28V20h16v8"/>
+                                <path d="M32 8v6"/>
+                                <path d="M28 8h8"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="catalog-card-content">
+                        <h3>Строительная группа</h3>
+                        <p>Краски для интерьера, фасадов, грунтовки, потолочные и декоративные покрытия</p>
+                        <span class="catalog-card-link">Подробнее <span class="arrow">&rarr;</span></span>
+                    </div>
+                </a>
+
+                <!-- 2. Industrial Group -->
+                <a href="catalog/industrial.html" class="catalog-card reveal">
+                    <div class="catalog-card-bg" style="background: linear-gradient(135deg, #1a2332 0%, #0d1117 100%);">
+                        <div class="catalog-card-icon">
+                            <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M8 56V24l12-16v16l12-12v12l12-16v32"/>
+                                <path d="M8 56h48"/>
+                                <circle cx="48" cy="40" r="8"/>
+                                <path d="M48 36v8M44 40h8"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="catalog-card-content">
+                        <h3>Индустриальная группа</h3>
+                        <p>Промышленные антикоррозионные краски, металлик, грунтовки</p>
+                        <span class="catalog-card-link">Подробнее <span class="arrow">&rarr;</span></span>
+                    </div>
+                </a>
+
+                <!-- 3. Road Marking -->
+                <a href="catalog/road-marking.html" class="catalog-card reveal">
+                    <div class="catalog-card-bg" style="background: linear-gradient(135deg, #1e2a1e 0%, #0d1117 100%);">
+                        <div class="catalog-card-icon">
+                            <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M12 8h40v48H12z"/>
+                                <path d="M32 12v8M32 28v8M32 44v8" stroke-dasharray="4 4"/>
+                                <path d="M20 8l-8 48M44 8l8 48"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="catalog-card-content">
+                        <h3>Краски для дорожной разметки</h3>
+                        <p>Резиновые, акриловые, термопластичные краски для разметки</p>
+                        <span class="catalog-card-link">Подробнее <span class="arrow">&rarr;</span></span>
+                    </div>
+                </a>
+
+                <!-- 4. Auto Paints -->
+                <a href="catalog/auto.html" class="catalog-card reveal">
+                    <div class="catalog-card-bg" style="background: linear-gradient(135deg, #2a1a2e 0%, #0d1117 100%);">
+                        <div class="catalog-card-icon">
+                            <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M10 40l6-16h32l6 16"/>
+                                <rect x="6" y="40" width="52" height="12" rx="3"/>
+                                <circle cx="18" cy="52" r="4"/>
+                                <circle cx="46" cy="52" r="4"/>
+                                <path d="M20 32h24"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="catalog-card-content">
+                        <h3>Автомобильные краски</h3>
+                        <p>Акриловые и синтетические 1K и 2K системы для авто</p>
+                        <span class="catalog-card-link">Подробнее <span class="arrow">&rarr;</span></span>
+                    </div>
+                </a>
+
+                <!-- 5. Epoxy Paints -->
+                <a href="catalog/epoxy.html" class="catalog-card reveal">
+                    <div class="catalog-card-bg" style="background: linear-gradient(135deg, #1a2e2a 0%, #0d1117 100%);">
+                        <div class="catalog-card-icon">
+                            <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M16 8h32v12H16z"/>
+                                <path d="M20 20v8c0 4 4 8 12 8s12-4 12-8v-8"/>
+                                <path d="M24 36v20M40 36v20"/>
+                                <path d="M20 56h24"/>
+                                <path d="M28 12h8"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="catalog-card-content">
+                        <h3>Эпоксидные краски</h3>
+                        <p>Грунтовки, финишные покрытия, для пола, без растворителей</p>
+                        <span class="catalog-card-link">Подробнее <span class="arrow">&rarr;</span></span>
+                    </div>
+                </a>
+
+                <!-- 6. Furniture Group -->
+                <a href="catalog/furniture.html" class="catalog-card reveal">
+                    <div class="catalog-card-bg" style="background: linear-gradient(135deg, #2e2a1a 0%, #0d1117 100%);">
+                        <div class="catalog-card-icon">
+                            <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="12" y="20" width="40" height="24" rx="4"/>
+                                <path d="M8 32v16M56 32v16"/>
+                                <path d="M16 44h32"/>
+                                <path d="M20 20v-8h24v8"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="catalog-card-content">
+                        <h3>Мебельная группа</h3>
+                        <p>Целлюлозные и полиуретановые краски и лаки для мебели</p>
+                        <span class="catalog-card-link">Подробнее <span class="arrow">&rarr;</span></span>
+                    </div>
+                </a>
+
+                <!-- 7. Marine Group -->
+                <a href="catalog/marine.html" class="catalog-card reveal">
+                    <div class="catalog-card-bg" style="background: linear-gradient(135deg, #0d1a2e 0%, #0d1117 100%);">
+                        <div class="catalog-card-icon">
+                            <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M32 8v20"/>
+                                <path d="M24 16h16l-8 12z"/>
+                                <path d="M12 40l8-12h24l8 12"/>
+                                <path d="M8 44c4-4 8-4 12 0s8 4 12 0 8-4 12 0 8 4 12 0"/>
+                                <path d="M8 52c4-4 8-4 12 0s8 4 12 0 8-4 12 0 8 4 12 0"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="catalog-card-content">
+                        <h3>Морская группа</h3>
+                        <p>Необрастающие, эпоксидные краски для судов и яхт</p>
+                        <span class="catalog-card-link">Подробнее <span class="arrow">&rarr;</span></span>
+                    </div>
+                </a>
+
+                <!-- 8. Special Products -->
+                <a href="catalog/special.html" class="catalog-card reveal">
+                    <div class="catalog-card-bg" style="background: linear-gradient(135deg, #2e1a1a 0%, #0d1117 100%);">
+                        <div class="catalog-card-icon">
+                            <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M32 8l4 12h12l-10 8 4 12-10-8-10 8 4-12-10-8h12z"/>
+                                <circle cx="32" cy="48" r="8"/>
+                                <path d="M28 48h8"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="catalog-card-content">
+                        <h3>Специальная продукция</h3>
+                        <p>Флуоресцентные, термостойкие, аэрозольные краски</p>
+                        <span class="catalog-card-link">Подробнее <span class="arrow">&rarr;</span></span>
+                    </div>
+                </a>
+
+                <!-- 9. Thinners -->
+                <a href="catalog/thinners.html" class="catalog-card reveal">
+                    <div class="catalog-card-bg" style="background: linear-gradient(135deg, #1a1a2e 0%, #0d1117 100%);">
+                        <div class="catalog-card-icon">
+                            <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M24 8h16v16c0 8-4 12-8 16s-8 8-8 16v0h16c0-8-4-12-8-16s-8-8-8-16"/>
+                                <ellipse cx="32" cy="56" rx="8" ry="3"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="catalog-card-content">
+                        <h3>Группа растворителей</h3>
+                        <p>Индустриальные, целлюлозные, эпоксидные, акриловые растворители</p>
+                        <span class="catalog-card-link">Подробнее <span class="arrow">&rarr;</span></span>
+                    </div>
+                </a>
+
+                <!-- 10. Auxiliary Products -->
+                <a href="catalog/auxiliary.html" class="catalog-card reveal">
+                    <div class="catalog-card-bg" style="background: linear-gradient(135deg, #1e1a2e 0%, #0d1117 100%);">
+                        <div class="catalog-card-icon">
+                            <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M20 12h4v40h-4z"/>
+                                <path d="M24 16c8-8 16-4 16 4v4H24"/>
+                                <circle cx="44" cy="44" r="8"/>
+                                <path d="M44 40v8M40 44h8"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="catalog-card-content">
+                        <h3>Вспомогательная продукция</h3>
+                        <p>Кисти, валики, защитные покрытия и аксессуары</p>
+                        <span class="catalog-card-link">Подробнее <span class="arrow">&rarr;</span></span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Block 4: Why Us -->
+    <section id="why-us" class="why-us section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Преимущества</span>
+                <h2 class="section-title">Что отличает нас от других?</h2>
+                <div class="title-underline">
+                    <span class="brush-stroke"></span>
+                </div>
+            </div>
+            <div class="advantages-grid">
+                <div class="advantage-card reveal">
+                    <div class="advantage-number">01</div>
+                    <div class="advantage-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M24 4l5.09 10.32L40 16.27l-8 7.79 1.89 11.01L24 30.24l-9.89 4.83L16 24.06l-8-7.79 10.91-1.95z"/>
+                        </svg>
+                    </div>
+                    <h3>Только лучшие материалы</h3>
+                    <p>Мы работаем только с лучшими материалами, гарантируя высочайшее качество, долговечность и износостойкость покрытий.</p>
+                </div>
+                <div class="advantage-card reveal">
+                    <div class="advantage-number">02</div>
+                    <div class="advantage-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 44V28M12 28c0-8 6-12 12-16 6 4 12 8 12 16M12 28h24"/>
+                            <circle cx="24" cy="16" r="4"/>
+                            <path d="M20 36h8"/>
+                        </svg>
+                    </div>
+                    <h3>Индивидуальный подход</h3>
+                    <p>Мы понимаем, что каждый проект уникален. Наши дизайнеры помогут выбрать оптимальное решение, учитывая особенности вашего помещения и ваши предпочтения.</p>
+                </div>
+                <div class="advantage-card reveal">
+                    <div class="advantage-number">03</div>
+                    <div class="advantage-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M8 36l8-8 8 8 8-16 8 8"/>
+                            <rect x="4" y="4" width="40" height="40" rx="4"/>
+                        </svg>
+                    </div>
+                    <h3>Высокий уровень сервиса</h3>
+                    <p>Полный спектр услуг: от консультации и подбора материалов до профессионального нанесения покрытий и последующего сервисного обслуживания.</p>
+                </div>
+                <div class="advantage-card reveal">
+                    <div class="advantage-number">04</div>
+                    <div class="advantage-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M20 24l4 4 8-8"/>
+                            <circle cx="24" cy="24" r="18"/>
+                        </svg>
+                    </div>
+                    <h3>Гарантия качества</h3>
+                    <p>Мы уверены в качестве нашей работы и предоставляем гарантию на все выполненные работы.</p>
+                </div>
+                <div class="advantage-card reveal">
+                    <div class="advantage-number">05</div>
+                    <div class="advantage-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="4" y="8" width="16" height="20" rx="2"/>
+                            <rect x="28" y="8" width="16" height="20" rx="2"/>
+                            <path d="M8 32h8M32 32h8"/>
+                            <path d="M12 36v4M36 36v4"/>
+                            <path d="M8 16h8M32 16h8"/>
+                        </svg>
+                    </div>
+                    <h3>Широкий выбор</h3>
+                    <p>Огромный выбор декоративных покрытий различных текстур и цветов, позволяющих реализовать любые дизайнерские решения.</p>
+                </div>
+                <div class="advantage-card reveal">
+                    <div class="advantage-number">06</div>
+                    <div class="advantage-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M24 4v8M24 36v8M4 24h8M36 24h8"/>
+                            <circle cx="24" cy="24" r="8"/>
+                            <circle cx="24" cy="24" r="16"/>
+                        </svg>
+                    </div>
+                    <h3>Локальное присутствие</h3>
+                    <p>Оперативная доставка материалов и быстрое реагирование на ваши запросы. Мы всегда рядом.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Block 5: Contacts -->
+    <section id="contacts" class="contacts section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Контакты</span>
+                <h2 class="section-title">Свяжитесь с нами</h2>
+                <div class="title-underline">
+                    <span class="brush-stroke"></span>
+                </div>
+            </div>
+            <div class="contacts-grid">
+                <div class="contacts-info reveal reveal-left">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                            </svg>
+                        </div>
+                        <div class="contact-text">
+                            <span class="contact-label">Телефоны</span>
+                            <a href="tel:+79894577111">+7 (989) 457-71-11</a>
+                            <a href="tel:+79654900687">+7 (965) 490-06-87</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                <path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                            </svg>
+                        </div>
+                        <div class="contact-text">
+                            <span class="contact-label">Адрес</span>
+                            <p>Махачкала, просп. Амет-хана Султана, 35, этаж 1</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                        <div class="contact-text">
+                            <span class="contact-label">Режим работы</span>
+                            <p>Пн-Сб: 9:00 — 18:00</p>
+                        </div>
+                    </div>
+                    <div class="contact-socials">
+                        <span class="contact-label">Мы в соцсетях</span>
+                        <div class="social-links">
+                            <a href="https://instagram.com/nero_decor.ru" target="_blank" class="social-link" aria-label="Instagram">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+                                </svg>
+                            </a>
+                            <a href="https://wa.me/79894577111" target="_blank" class="social-link" aria-label="WhatsApp">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                                </svg>
+                            </a>
+                            <a href="#" target="_blank" class="social-link" aria-label="VKontakte">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M15.684 0H8.316C1.592 0 0 1.592 0 8.316v7.368C0 22.408 1.592 24 8.316 24h7.368C22.408 24 24 22.408 24 15.684V8.316C24 1.592 22.391 0 15.684 0zm3.692 17.123h-1.744c-.66 0-.864-.525-2.05-1.727-1.033-1-1.49-1.135-1.744-1.135-.356 0-.458.102-.458.593v1.575c0 .424-.135.678-1.253.678-1.846 0-3.896-1.118-5.335-3.202C4.624 10.857 4.03 8.57 4.03 8.096c0-.254.102-.491.593-.491h1.744c.44 0 .61.203.78.677.863 2.49 2.303 4.675 2.896 4.675.22 0 .322-.102.322-.66V9.721c-.068-1.186-.695-1.287-.695-1.71 0-.203.17-.407.44-.407h2.744c.373 0 .508.203.508.643v3.473c0 .372.17.508.271.508.22 0 .407-.136.813-.542 1.254-1.406 2.151-3.574 2.151-3.574.119-.254.322-.491.763-.491h1.744c.525 0 .644.27.525.643-.22 1.017-2.354 4.031-2.354 4.031-.186.305-.254.44 0 .78.186.254.796.779 1.203 1.253.745.847 1.32 1.558 1.473 2.05.17.49-.085.744-.576.744z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contacts-form-wrapper reveal reveal-right">
+                    <form class="contact-form" id="contact-form">
+                        <h3>Обратная связь</h3>
+                        <p class="form-desc">Оставьте заявку и мы свяжемся с вами в ближайшее время</p>
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required placeholder=" ">
+                            <label for="name">Ваше имя</label>
+                            <span class="form-line"></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" required placeholder=" ">
+                            <label for="phone">Телефон</label>
+                            <span class="form-line"></span>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="4" placeholder=" "></textarea>
+                            <label for="message">Сообщение</label>
+                            <span class="form-line"></span>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            <span>Отправить</span>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <!-- Map -->
+            <div class="map-wrapper reveal">
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0254f205e6f0790666eae21064081a3c7968dc59fc24172cfa590faab1ccca64&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="assets/images/logo/nero-logo.jpg" alt="NERO" class="footer-logo">
+                    <p>Студия декоративных покрытий и красок</p>
+                </div>
+                <div class="footer-nav">
+                    <h4>Навигация</h4>
+                    <ul>
+                        <li><a href="#about">О нас</a></li>
+                        <li><a href="#catalog">Каталог</a></li>
+                        <li><a href="#why-us">Почему мы</a></li>
+                        <li><a href="#contacts">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contacts">
+                    <h4>Контакты</h4>
+                    <a href="tel:+79894577111">+7 (989) 457-71-11</a>
+                    <a href="tel:+79654900687">+7 (965) 490-06-87</a>
+                    <p>Махачкала, просп. Амет-хана Султана, 35</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 NERO Decor Studio. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script type="module" src="js/galaxy.js"></script>
+</body>
+</html>
